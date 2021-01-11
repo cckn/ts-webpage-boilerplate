@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="assets/favicon.ico" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+
+    <title>TITLE | Kiosk <%= env %></title>
+    <link rel="icon" href="/assets/favicon.png" />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="grid container">
+        <div class="box grid__chart"></div>
+        <div class="box grid__now"></div>
+        <div class="box grid__metric"></div>
+        <div class="box grid__status status--on"></div>
+        <div class="box grid__control"></div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
