@@ -1,3 +1,5 @@
 import "./app.css";
 
-document.addEventListener("DOMContentLoaded", () => {});
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Hello FE");
+});

@@ -4,3 +4,36 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.grid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  margin: 24px 24px 24px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid__chart {
+  grid-area: 1/ 1/ 3/ 3;
+}
+.grid__metric {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.grid__now {
+}
+.grid__status {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.grid__control {
+  grid-column: 2 / span 2;
+  justify-content: space-evenly;
+}

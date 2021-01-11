@@ -25,7 +25,6 @@ module.exports = {
 
   module: {
     rules: [
-      //   { test: /\.js$/, use: `console.log("test")` },
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
@@ -40,7 +39,12 @@ module.exports = {
         },
       },
       { test: /\.ts$/, use: "awesome-typescript-loader" },
-      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader",
+        exclude: /node_modules/,
+      },
       { enforce: "pre", test: /\.ts$/, loader: "tslint-loader" },
     ],
   },
